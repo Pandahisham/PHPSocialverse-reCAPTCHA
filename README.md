@@ -1,1 +1,1 @@
-# PHPSocialverse-noCAPTCHA
+# PHPSocialverse-reCAPTCHA
