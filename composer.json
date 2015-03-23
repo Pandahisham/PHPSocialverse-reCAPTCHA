@@ -1,0 +1,33 @@
+{
+    "name": "phpsocialverse/recaptcha",
+    "description": "No CAPTCHA (new Google reCAPTCHA) with Laravel support",
+    "keywords": ["recaptcha", "no-captcha", "captcha", "google", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PHPSocialverse",
+            "email": "josh@phpjosh.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~2.2",
+        "phpunit/phpcov": "~2.0",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPSocialverse\\ReCaptcha\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPSocialverse\\ReCaptcha\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
