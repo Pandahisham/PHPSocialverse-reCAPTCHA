@@ -67,8 +67,8 @@ See [Protecting Sensitive Configuration](http://laravel.com/docs/4.2/configurati
  * By adding this two lines and fill it with your keys.
  */
 return [
-    'NOCAPTCHA_SECRET'  => 'your-secret-key',
-    'NOCAPTCHA_SITEKEY' => 'your-site-key'
+    'RECAPTCHA_SECRET'  => 'your-secret-key',
+    'RECAPTCHA_SITEKEY' => 'your-site-key'
 ];
 
 ````
@@ -82,8 +82,8 @@ Edit the `secret` and `sitekey` values in `app/config/packages/phpsocialverse/re
 <?php
 
 return [
-    'secret'  => getenv('NOCAPTCHA_SECRET')  ?: 'no-captcha-secret',
-    'sitekey' => getenv('NOCAPTCHA_SITEKEY') ?: 'no-captcha-sitekey',
+    'secret'  => getenv('RECAPTCHA_SECRET')  ?: 're-captcha-secret',
+    'sitekey' => getenv('RECAPTCHA_SITEKEY') ?: 're-captcha-sitekey',
     'lang'    => app()->getLocale(),
 ];
 ```
@@ -138,8 +138,6 @@ if ( ! empty($_POST)) {
 echo $captcha->script();
 ?>
 ```
-
-Check the [examples folder](https://github.com/ARCANEDEV/noCAPTCHA/tree/master/examples) for more usage details.
 
 ## Laravel
 
@@ -247,12 +245,4 @@ if ($validator->fails()) {
 
 Any ideas are welcome. Feel free the submit any issues or pull requests.
 
-## TODOS:
-
-  - [x] Documentation
-  - [x] Examples
-  - [x] More tests and code coverage
-  - [x] Laravel Support (v4.2)
-  - [ ] Laravel Support (v5.0)
-  - [ ] Refactoring
   
