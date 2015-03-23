@@ -74,9 +74,9 @@ return [
 ````
 
 ##### Option 2:
-Run `php artisan config:publish arcanedev/no-captcha` to publish the config file.
+Run `php artisan config:publish phpsocialverse/recaptcha` to publish the config file.
     
-Edit the `secret` and `sitekey` values in `app/config/packages/arcanedev/no-captcha/config.php` file:
+Edit the `secret` and `sitekey` values in `app/config/packages/phpsocialverse/re-captcha/config.php` file:
 
 ```php
 <?php
